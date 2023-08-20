@@ -9,7 +9,7 @@
    .top__slide-content{
       padding-right: 15px;
       height: 300px;
-      width: 440px;
+      min-width: 440px;
    }
 }
 
@@ -68,7 +68,7 @@
    .top__slide-content{
       padding-right: 15px;
       height: 270px;
-      width: 340px;
+      min-width: 340px;
    }
    .top__slide-text{
       font-size: 16px;
@@ -122,17 +122,6 @@
    
 }
 @media (max-width: 700px){
-   /*.top{
-      background-size: 100% 65%;
-   }
-   .top__slide{
-      justify-content: center;
-      padding-bottom:35px;
-   }
-   .top__slide-img{
-      display: none;
-   }
-   */
    .top__slide-title{
       font-size: 44px;
       line-height: 57px;
@@ -144,7 +133,7 @@
    .top__slide-content{
       text-align: left;
       height: 250px;
-      width: 340px;
+      min-width: 340px;
    }
    .top__slide-text{
       font-size: 14px;
@@ -189,11 +178,12 @@
       }
       .top__slide-content{
          text-align: left;
-         height: 230px;
-         width: 320px;
+         height: 210px;
+         min-width: 240px;
       }
       .top__slide-text{
          font-size: 12px;
+         line-height: 21px;
       }      
 }
 
@@ -267,9 +257,47 @@
       font-size: 14px;
    }
 
-
-   
+   .top__slide-title{
+      font-size: 28px;
+      line-height: 37px;
+   }
+   .top__slide-hr{
+      width: 55px;
+      margin-left: 0;
+   }
+   .top__slide-content{
+      padding-left: 10px;
+      padding-right: 10px;
+      text-align: left;
+      height: 150px;
+      min-width: 180px;
+   }
+   .top__slide-text{
+      font-size: 10px;
+   }      
 }
+@media (max-width: 440px){
+   .top__slide-title{
+      font-size: 22px;
+      line-height: 35px;
+   }
+   .top__slide-hr{
+      width: 45px;
+      margin-left: 0;
+   }
+   .top__slide-content{
+      padding-left: 10px;
+      padding-right: 10px;
+      text-align: left;
+      height: 140px;
+      min-width: 160px;
+   }
+   .top__slide-text{
+      font-size: 10px;
+      line-height: 18px;
+   }      
+}
+
 @media (max-width: 378px){
    .footer__content{
       height: 470px;
@@ -281,21 +309,25 @@
    .menu{
       border-right: none;
    }
-
    .top__slide-title{
-      font-size: 27px;
-      line-height: 35px;
+      font-size: 22px;
+      line-height: 32px;
    }
    .top__slide-hr{
-      width: 55px;
+      width: 45px;
       margin-left: 0;
    }
-
-   .top__slide-text{
-      font-size: 12px;
+   .top__slide-content{
+      padding-left: 8px;
+      padding-right: 10px;
+      text-align: left;
+      height: 140px;
+      min-width: 130px;
    }
-
-
+   .top__slide-text{
+      font-size: 8px;
+      line-height: 16px;
+   }      
 
 }
 
