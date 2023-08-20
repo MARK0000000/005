@@ -1,0 +1,44 @@
+%mont {
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 700;
+}
+%h3 {
+   color: #363838;
+   text-align: center;
+   font-size: 36px;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 700;
+   line-height: 51px;
+}
+%h3-992 {
+   color: #363838;
+   text-align: center;
+   font-size: 28px;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 700;
+   line-height: 42px;
+}
+%h3-700 {
+   color: #363838;
+   text-align: center;
+   font-size: 24px;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 700;
+   line-height: 38px;
+}
+
+
+%h4 {
+   color: #363838;
+   text-align: center;
+   font-size: 24px;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 700;
+   line-height: 38px;
+}
+
+
+@mixin f ($j, $a) {display: flex; justify-content: $j; align-items: $a;}
+
+$title: #363838;
+$default: #5A5A5A;
