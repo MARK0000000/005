@@ -1,4 +1,10 @@
-@media (max-width: 1200px){
+@media (max-width: 1920px) { 
+ 
+}
+@media (max-width: 1536px) { 
+
+}
+@media (max-width: 1366px) { 
    .header{
       &__inner{
          height: 110px;
@@ -6,22 +12,20 @@
    }
    .top{
       &__slide-title{
-         font-size: 65px;
-         line-height: 79px;
+         font-size: 80px;
       }
       &__slide-hr{
-         width: 120px;
+         width: 140px;
       }
       &__slide-content{
          padding-right: 15px;
          height: 300px;
-         min-width: 440px;
+         max-width: 480px;
       }
    }
+
 }
-
-
-@media (max-width: 992px){
+@media (max-width: 1024px) {  
    .header{
       &__inner{
          height: 100px;
@@ -69,20 +73,17 @@
          text-align: center;
       }
    }  
-}
-@media (max-width: 840px){
    .top{
       &__slide-title{
-         font-size: 52px;
-         line-height: 67px;
+         font-size: 60px;
       }
       &__slide-hr{
-         width: 85px;
+         width: 100px;
       }
       &__slide-content{
          padding-right: 15px;
          height: 270px;
-         min-width: 340px;
+         max-width: 380px;
       }
       &__slide-text{
          font-size: 16px;
@@ -96,8 +97,7 @@
    }
 
 }
-
-@media (max-width: 768px){
+@media (max-width: 768px) { 
    .header{
       &__inner{
          height: 90px;
@@ -105,8 +105,7 @@
       &__btn{
          display: none;
       }
-   }
-   
+   } 
    .menu{
    &__list-item{
       padding-left: 0;
@@ -140,24 +139,22 @@
          margin-right: 0;
       }
    }
-}
-@media (max-width: 700px){
    .top{
       &__slide-title{
-         font-size: 44px;
-         line-height: 57px;
+         font-size: 50px;
       }
       &__slide-hr{
-         width: 75px;
+         width: 85px;
          margin-left: 0;
       }
       &__slide-content{
-         text-align: left;
-         height: 250px;
-         min-width: 340px;
+         height: 220px;
+         max-width: 300px;
+         padding-left: 15px;
       }
       &__slide-text{
-         font-size: 14px;
+         font-size: 13px;
+         line-height: 23px;
    }
    } 
    .collection{
@@ -187,7 +184,117 @@
          text-align: center;
       }
    }  
+
 }
+@media (max-width: 640px) {  
+   .top__slide-title{
+      font-size: 40px;
+   }
+   .top__slide-hr{
+      width: 65px;
+      margin-left: 0;
+   }
+   .top__slide-content{
+      height: 210px;
+      max-width: 240px;
+   }
+   .top__slide-text{
+      font-size: 13px;
+      line-height: 21px;
+   }      
+
+}
+@media (max-width: 500px) {  
+   .logo{
+      order: -1;
+   }
+   .header__btn-menu{
+      order: -1;
+      display: block;
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      height: 20px;
+      @include f (space-between, center);
+      flex-direction: column;
+      span{
+         background-color: #000;
+         height: 3px;
+         width: 30px;
+         border-radius: 1.5px;
+         display: block;
+      }
+   }
+   .menu{
+      border: $title 5px solid;
+      padding-right: 0px;
+      width: 100%;
+      z-index: 5;
+      text-align: center;
+      transform: translateX(250px);
+      transition: ease 1s;
+      background-color: #fff;
+      margin-left: 75%;
+      &--open{
+         transition: ease 1s;
+         transform: translateX(15px);
+      }
+   }
+   .menu_border-bottom_none{
+      border-bottom: none;
+   }
+   .menu_border-top_none{
+      border-top: none;
+   }
+   .menu__list{
+      display: block;
+   }
+   .menu__list-item{
+      padding-right: 0;
+
+   }
+   .menu__list-link{
+      display: block;
+      padding: 10px 0;
+   }
+   .top__slide{
+      padding-bottom: 30px;
+   }
+   .top__slide-title{
+      font-size: 30px;
+   }
+   .top__slide-hr{
+      width: 45px;
+      margin-left: 0;
+   }
+   .top__slide-content{
+      height: 170px;
+      max-width: 170px;
+      padding-right: 10px;
+      padding-left: 5px;
+   }
+   .top__slide-text{
+      font-size: 10px;
+      line-height: 16px;
+   }      
+   .header__inner{
+      flex-wrap: wrap;
+      padding-top: 20px;
+      height: 70px;
+   }
+   .footer__form-btn{
+      width: 70px;
+   }
+   .footer__content{
+      height: 470px;
+   }
+
+}
+
+
+
+/*
 @media (max-width: 635px){
       .top__slide-title{
             font-size: 36px;
@@ -360,4 +467,4 @@
       line-height: 16px;
    }      
 }
-
+*/
