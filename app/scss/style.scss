@@ -43,7 +43,6 @@
 }
 
 .rightSide-menu{
-   display: none;
    &--active{
       position: fixed;
       right: 0;
@@ -285,7 +284,6 @@
    }
 
    &__menu{
-      width: 130px;
       margin-right: 60px;
    }
    &__menu-item{
@@ -301,7 +299,6 @@
       color: #A1A1A1;
       text-align: center;
       padding: 42px 0px 41px;
-      height: 110px;
    }
 }
 
