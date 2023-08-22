@@ -443,13 +443,14 @@
       width: 100%;
       z-index: 5;
       text-align: center;
-      transform: translateY(-250px);
-      transition: ease 1s;
+      transform: translateY(-210px);
+      transition: ease 0.5s;
       background-color: #fff;
       margin-left: 75%;
+      margin-right: -15px;
       &--open{
          transition: ease 1s;
-         transform: translateY(0px);
+         transform: translateY(-50px);
       }
       &__list-item:first-child{
          padding-right: 0px;
