@@ -181,15 +181,16 @@
    }
    &__item:first-child{
       grid-row: span 2;
+      min-height: 240px;
    }
    &__item_reverse:first-child{
       grid-row: span 1;
+      min-height: auto;
    }
    &__item_reverse:nth-child(3){
       grid-row: span 2;
+      min-height: 240px;
    }
-
-
    &__item img{
       object-fit: cover;
       width: 100%;
@@ -556,17 +557,24 @@
    margin-top: 90px;
    &__title{
       @extend %h3;
-      width: 430px;
+      max-width: 430px;
       margin: 0 auto;
    }
    &__items-box{
-      @include f (space-between, start);
+      @include f (center, flex-start);
       margin-top: 30px
    }
    &__item{
       @include f (space-between,start);
       flex-direction: column;
       height: 440px;
+   }
+   &__item:first-child{
+      margin-right: 30px;
+   }
+   &__img{
+      height: 100%;
+      width: 100%;
    }
    &__links{
       color: #707070;
@@ -594,7 +602,7 @@
 
    &__item-title{
       @extend %h4;
-      width: 540px;
+      max-width: 540px;
       text-align:start ;
    }
 

@@ -32,6 +32,11 @@
 
 }
 @media (max-width: 1024px) {  
+   .main{
+      &_home{
+         margin-bottom: 85px;
+      }
+   }   
    .header{
       &__inner{
          height: 100px;
@@ -110,6 +115,24 @@
          height: 36px;
       }
    }
+   .blockIdeas{
+      margin-top: 80px;
+      &__title{
+         font-size: 28px;
+         line-height: 42px;
+      }
+      &__item:first-child{
+         margin-right: 0px;
+      }   
+      &__item:last-child{
+         display: none;
+      }
+
+      &__item-title{
+         font-size: 20px;
+         line-height: 32px;
+      }
+   }
    .footer{
       &__info{
          width: 380px;
@@ -129,6 +152,11 @@
    }
 }
 @media (max-width: 768px) { 
+   .main{
+      &_home{
+         margin-bottom: 70px;
+      }
+   }   
    .header{
       &__inner{
          height: 90px;
@@ -265,6 +293,36 @@
          height: 31px;
       }
    }
+   .blockIdeas{
+      margin-top: 70px;
+      &__title{
+         font-size: 24px;
+         line-height: 38px;
+      }
+      &__item{
+         height: 400px;
+      }   
+      &__item-title{
+         font-size: 18px;
+         line-height: 28px;
+      }
+      &__links{
+         font-size: 12px;
+         line-height: 24px;
+      }
+      &__date{
+         font-size: 12px;
+         line-height: 24px;
+      }
+      &__author{
+         font-size: 12px;
+         line-height: 24px;
+      }
+      &__theme{
+         font-size: 12px;
+         line-height: 24px;
+      }
+   }
    .footer{
       &__inner{
          flex-direction: column;
@@ -343,6 +401,11 @@
    }
 }
 @media (max-width: 500px) {  
+   .main{
+      &_home{
+         margin-bottom: 75px;
+      }
+   }   
    .header{
       &__inner{
          flex-wrap: wrap;
@@ -552,6 +615,36 @@
          font-size: 10px;
          line-height: 16px;
          height: 24px;
+      }
+   }
+   .blockIdeas{
+      margin-top: 60px;
+      &__title{
+         font-size: 20px;
+         line-height: 32px;
+      }
+      &__item{
+         height: 290px;
+      }         
+      &__item-title{
+         font-size: 16px;
+         line-height: 24px;
+      }
+      &__links{
+         font-size: 10px;
+         line-height: 20px;
+      }
+      &__date{
+         font-size: 10px;
+         line-height: 20px;
+      }
+      &__author{
+         font-size: 10px;
+         line-height: 20px;
+      }
+      &__theme{
+         font-size: 10px;
+         line-height: 20px;
       }
    }
    .footer{
