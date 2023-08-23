@@ -42,6 +42,9 @@
       &_about{
          margin-bottom: 60px;
       }
+      &_contact{
+         margin-bottom: 115px;
+      }   
    }   
    .header{
       &__inner{
@@ -204,6 +207,23 @@
    .map{
       height: 470px;
    }
+   .contact-collection{
+      margin-top: 80px;
+      &__collection.collection{
+         grid-template-columns: repeat(8, 1fr);
+         grid-column-gap: 12px;   
+      }
+      .collection__item:nth-child(9){
+         display: none;
+      }
+      .collection__info{
+         height: 100%;
+      }
+      .collection__info-title{
+         font-size: 14px;
+         text-align: center;
+      }
+   }   
    .footer{
       &__info{
          width: 380px;
@@ -233,6 +253,9 @@
       &_about{
          margin-bottom: 50px;
       }
+      &_contact{
+         margin-bottom: 85px;
+      }   
    }   
    .header{
       &__inner{
@@ -512,6 +535,16 @@
          height: 105px;
       }   
    }
+   .contact-collection{
+      margin-top: 60px;
+      &__collection.collection{
+         grid-template-columns: repeat(6, 1fr);
+         grid-column-gap: 10px;   
+      }
+      .collection__item:nth-child(8){
+         display: none;
+      }
+   }   
    .footer{
       &__inner{
          flex-direction: column;
@@ -600,6 +633,9 @@
       &_about{
          margin-bottom: 40px;
       }
+      &_contact{
+         margin-bottom: 55px;
+      }   
    }   
    .header{
       &__inner{
@@ -959,6 +995,15 @@
       }
    
    }
+   .contact-collection{
+      margin-top: 40px;
+      &__collection{
+         padding-bottom: 40px;
+      }
+      &__collection.collection{
+         grid-column-gap: 5px;   
+      }
+   }   
    .footer{
       &__form-btn{
          width: 70px;

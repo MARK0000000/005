@@ -741,6 +741,9 @@
 }
 
 // contact
+.map{
+   height: 570px;
+}
 .contact{
    margin-top: 55px;
    &__text-box{
@@ -809,8 +812,14 @@
 }
 
 .contact-collection{
+   .swiper-wrapper{
+      padding: 0;
+   }
    margin-top: 100px;
-   height: 260px;
+   height: 100%;
+   &__collection{
+      padding-bottom: 50px;
+   }
    &__collection.collection{
       display: grid;
       grid-template-columns: repeat(10, 1fr);
