@@ -36,6 +36,12 @@
       &_home{
          margin-bottom: 85px;
       }
+      &_gallery{
+         margin-bottom: 130px;
+      }
+      &_about{
+         margin-bottom: 60px;
+      }
    }   
    .header{
       &__inner{
@@ -133,6 +139,68 @@
          line-height: 32px;
       }
    }
+   .about{
+      &__prev{
+         height: 380px;
+      }
+      &__prev-title{
+         font-size: 50px;
+         line-height: 70px;
+      }
+   }   
+   .about-text{
+      margin-top: 110px;
+      &__title{
+         font-size: 28px;
+         line-height: 42px;
+         width: 90%;
+      }
+      &__hr{
+         width: 180px;
+         margin-top: 16px;
+         margin-bottom: 16px;
+      }
+      &__text:nth-child(1){
+         margin-bottom: 30px;
+      }
+   }
+   .popup-video{
+      margin-top: 80px;
+      height: 320px;
+   }   
+   .inspiration{
+      margin-top: 90px;
+      height: 400px;
+      background-size: 100% 75%;
+      &__img{
+         margin-right: 20px;
+         height: auto;
+      }
+      &__content{
+         padding-bottom: 75px;
+      }
+      .about-text__title{
+         width: 100%;
+      }
+      &__about-text{
+         margin-top: 0;
+      }
+   }
+   .inspiration-charts{
+      height: 260px;
+      &__text-box{
+         padding-bottom: 14px;
+      }
+   }
+   .partners{
+      &__item-box{
+         display: grid;
+         grid-template-columns: repeat(4, 1fr);  
+      }
+      &__item:nth-child(5){
+         display: none;
+      }
+   }   
    .footer{
       &__info{
          width: 380px;
@@ -155,6 +223,12 @@
    .main{
       &_home{
          margin-bottom: 70px;
+      }
+      &_gallery{
+         margin-bottom: 90px;
+      }
+      &_about{
+         margin-bottom: 50px;
       }
    }   
    .header{
@@ -292,6 +366,10 @@
          line-height: 23px;
          height: 31px;
       }
+      &__indent{
+         height: 20px;
+      }
+   
    }
    .blockIdeas{
       margin-top: 70px;
@@ -323,6 +401,78 @@
          line-height: 24px;
       }
    }
+   .about{
+      &__prev{
+         height: 300px;
+      }
+      &__prev-title{
+         font-size: 35px;
+         line-height: 55px;
+      }
+   }   
+   .about-text{
+      margin-top: 90px;
+      &__title{
+         font-size: 24px;
+         line-height: 38px;
+         width: 100%;
+         text-align: left;
+      }
+      &__hr{
+         width: 160px;
+         margin-top: 13px;
+         margin-bottom: 13px;
+      }
+      &__text{
+         font-size: 13px;
+         line-height: 23px;
+      }
+
+      &__text:nth-child(1){
+         margin-bottom: 20px;
+      }
+   }
+   .popup-video{
+      margin-top: 65px;
+      height: 240px;
+      &__button-img{
+         height: 60px;
+         width: 60px;
+      }
+   }   
+   .inspiration{
+      margin-top: 80px;
+      height: 380px;
+      background-size: 100% 75%;
+      &__img{
+         display: none;
+      }
+      &__content{
+         padding-bottom: 55px;
+      }
+      &__about-text{
+         margin-top: 0;
+      }
+   }
+   .inspiration-charts{
+      &__text-box{
+         padding-bottom: 10px;
+      }
+      &__text{
+         font-size: 13px;
+         line-height: 16px;
+      }
+   }
+   .partners{
+      &__item-box{
+         grid-column-gap: 20px;
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);  
+      }
+      &__item:nth-child(4){
+         display: none;
+      }
+   }   
    .footer{
       &__inner{
          flex-direction: column;
@@ -405,6 +555,12 @@
       &_home{
          margin-bottom: 75px;
       }
+      &_gallery{
+         margin-bottom: 60px;
+      }
+      &_about{
+         margin-bottom: 40px;
+      }
    }   
    .header{
       &__inner{
@@ -472,6 +628,10 @@
       &__list-link{
          display: block;
          padding: 7px 0;
+      }
+      &__list-link_active{
+         border-bottom: none;
+         opacity: 0.5;
       }
    }
    .top{
@@ -617,6 +777,9 @@
          line-height: 16px;
          height: 24px;
       }
+      &__indent{
+         height: 10px;
+      }   
    }
    .blockIdeas{
       margin-top: 60px;
@@ -648,6 +811,67 @@
          line-height: 20px;
       }
    }
+   .about{
+      &__prev{
+         height: 230px;
+      }
+      &__prev-title{
+         font-size: 25px;
+         line-height: 40px;
+      }
+   }   
+   .about-text{
+      margin-top: 70px;
+      &__title{
+         font-size: 20px;
+         line-height: 32px;
+      }
+      &__hr{
+         width: 130px;
+         margin-top: 10px;
+         margin-bottom: 10px;
+      }
+      &__text{
+         font-size: 10px;
+         line-height: 16px;
+      }
+
+      &__text:nth-child(1){
+         margin-bottom: 10px;
+      }
+   }
+   .popup-video{
+      margin-top: 50px;
+      height: 180px;
+      &__button-img{
+         height: 40px;
+         width: 40px;
+      }
+   }  
+   .inspiration{
+      margin-top: 70px;
+      height: 300px;
+      &__content{
+         padding-bottom: 35px;
+      }
+      &__about-text{
+         margin-top: 0;
+      }
+   }
+   .inspiration-charts{
+      &__text-box{
+         padding-bottom: 8px;
+      }
+      &__text{
+         font-size: 10px;
+         line-height: 14px;
+      }
+   }
+   .partners{
+      &__item-box{
+         grid-column-gap: 15px;
+      }
+   }   
    .footer{
       &__form-btn{
          width: 70px;
