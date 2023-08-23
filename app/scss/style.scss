@@ -743,17 +743,21 @@
 // contact
 .contact{
    margin-top: 55px;
+   &__text-box{
+      width: 75%;
+      margin-left: auto;
+   }
    &__social{
       margin-top: 20px;
       display: flex;
-      width: 825px;
+      width: 100%;
       margin-bottom: 19px;
    }
    &__social-item{
       margin-right: 36px;
    }
    &__address{
-      width: 825px;
+      width: 100%;
       margin-bottom: 16px;   
    }
    &__address-telephone{
@@ -761,16 +765,16 @@
    }
 
    &__info-email{
-      margin-bottom: 24px;
-      width: 825px;
-   
+      width: 100%;
    }
    &__form{
-      width: 825px;
+      margin-top: 24px;
+      width: 100%;
    }
    &__text{
       color: #A1A1A1;
       margin-bottom: 10px;
+      margin-left: 0;
    }
    &__form-item{
       border: 1px solid #DFDFDF;
@@ -785,16 +789,16 @@
    }
 
    &__name{
-      width: 407px;
+      width: 49%;
       border-radius: 20px;
    }
    &__email{
-      width: 407px;
+      width: 49%;
       border-radius: 20px;
    }
    &__textarea{
       margin-top: 13px;
-      width: 825px;
+      width: 100%;
       border-radius: 24px;
       height: 125px;
 

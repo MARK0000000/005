@@ -201,6 +201,9 @@
          display: none;
       }
    }   
+   .map{
+      height: 470px;
+   }
    .footer{
       &__info{
          width: 380px;
@@ -473,6 +476,42 @@
          display: none;
       }
    }   
+   .map{
+      height: 370px;
+   }
+   .contact{
+      margin-top: 45px;
+      &__text-box{
+         width: 100%;
+         margin-left: 0;
+      }
+      &__address{
+         font-size: 13px;
+         line-height: 23px;
+      }   
+      &__form-item:first-child{
+         margin-right: 3px;
+      }
+      &__form-item{
+         font-size: 13px;
+         padding-left: 14px;
+         height: 30px;
+      }
+      &__name{
+         width: 49%;
+         border-radius: 20px;
+      }
+      &__email{
+         width: 49%;
+         border-radius: 20px;
+      }
+      &__textarea{
+         margin-top: 13px;
+         width: 100%;
+         border-radius: 24px;
+         height: 105px;
+      }   
+   }
    .footer{
       &__inner{
          flex-direction: column;
@@ -872,6 +911,54 @@
          grid-column-gap: 15px;
       }
    }   
+   .map{
+      height: 270px;
+   }
+   .contact{
+      margin-top: 35px;
+      &__social{
+         margin-top: 10px;
+         margin-bottom: 10px;
+      }
+      &__text{
+         margin-bottom: 10px;
+      }
+      &__address{
+         margin-bottom: 10px;
+         font-size: 10px;
+         line-height: 12px;
+      }   
+      &__info-email{
+         font-size: 12px;
+      }   
+      &__form{
+         margin-top: 10px;
+      }
+      &__form-item:first-child{
+         margin-right: 0px;
+      }
+      &__form-item{
+         font-size: 10px;
+         padding-left: 12px;
+         height: 25px;
+      }
+      &__name{
+         border-radius: 12.5px;
+      }
+      &__email{
+         border-radius: 12.5px;
+      }
+      &__textarea{
+         margin-top: 10px;
+         width: 100%;
+         border-radius: 18px;
+         height: 95px;
+      }   
+      &__btn{
+         margin-top: 10px;
+      }
+   
+   }
    .footer{
       &__form-btn{
          width: 70px;
