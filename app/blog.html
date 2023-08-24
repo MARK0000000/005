@@ -20,7 +20,7 @@
    <header class="header">
       <div class="container">
          <div class="header__inner">
-            <nav class="menu">
+            <nav class="menu menu_border-bottom_none">
                <ul class="menu__list">
                   <li class="menu__list-item">
                   <a class="menu__list-link" href="./about.html">About</a>
@@ -33,7 +33,7 @@
             <a class="logo" href="#">
                <img src="./images/icons/logo.png" alt="logo">
             </a>
-            <nav class="menu">
+            <nav class="menu menu_border-top_none">
                <ul class="menu__list">
                   <li class="menu__list-item">
                   <a class="menu__list-link menu__list-link_active" href="./blog.html">Blog</a>
@@ -85,7 +85,7 @@
 
       <section class="blog-page">
          <div class="container">
-            <div class="blog-page__inner">
+            <div class="blog-page__inner">    
                <div class="blog-page__items">
                   <article class="blog blog-1">
                      <img class="blog__img" src="./images/blog/blog_1.png" alt="images">
@@ -143,7 +143,7 @@
                         <img class="pagination__arrow-icon" src="./images/icons/paginationArrow-right.svg" alt="arrow-right">
                      </a>
                   </div>                
-               </div>
+               </div>             
                <aside class="aside">
                   <form class="aside__form">
                      <input class="aside__form-search" type="text" placeholder="Search">
@@ -151,8 +151,14 @@
                         <img src="./images/icons/search-icon.svg" alt="#">
                      </button>
                   </form>
+                  <div class="aside__show-button-box">
+                     <span class="aside__show-text">Search for:</span>
+                     <button class="aside__show-button aside__show-button_categories">Categories</button>
+                     <button class="aside__show-button aside__show-button_recent">Recent posts</button>
+                     <button class="aside__show-button aside__show-button_tags">Tags</button>
+                  </div>
                   <div class="aside__categories">
-                     <h6 class="aside__categories-title">Categories</h6>
+                     <h6 class="aside__categories-title aside__titles">Categories</h6>
                      <ul class="aside__categories-list">
                         <li class="aside__categories-item">
                            <a class="aside__categories-link" href="#">Dining room (1)</a>
@@ -172,24 +178,24 @@
                      </ul>
                   </div>
                   <div class="aside__recent">
-                     <h6 class="aside__recent-title">Recent Posts</h6>
+                     <h6 class="aside__recent-title aside__titles">Recent Posts</h6>
                      <ul class="recent-posts">
                         <li class="recent-posts__item">
                            <a class="recent-posts__title" href="#">Cred selfies edison bulb four dollar toast humblebrag</a>
-                           <p class="recent-posts__caption"><a class="recent-posts__date" href="#">August 10, 2020</a> | <a class="recent-posts__author" href="#">by Ann Summers</a></p>
+                           <p class="recent-posts__caption"><a class="recent-posts__date recent-posts__caption" href="#">August 10, 2020</a> | <a class="recent-posts__author recent-posts__caption" href="#">by Ann Summers</a></p>
                         </li>
                         <li class="recent-posts__item">
                            <a class="recent-posts__title" href="#">Semiotics fixie four dollar toast, next level woke scenester direct trade photo booth</a>
-                           <p class="recent-posts__caption"><a class="recent-posts__date" href="#">September 30 ,2020</a> | <a class="recent-posts__author" href="#">by Ann Summers</a></p>
+                           <p class="recent-posts__caption"><a class="recent-posts__date recent-posts__caption" href="#">September 30 ,2020</a> | <a class="recent-posts__author recent-posts__caption" href="#">by Ann Summers</a></p>
                         </li>
                         <li class="recent-posts__item">
                            <a class="recent-posts__title" href="#">Cred selfies edison bulb four dollar toast humblebrag</a>
-                           <p class="recent-posts__caption"><a class="recent-posts__date" href="#">May 2, 2020</a> | <a class="recent-posts__author" href="#">by Ann Summers</a></p>
+                           <p class="recent-posts__caption"><a class="recent-posts__date recent-posts__caption" href="#">May 2, 2020</a> | <a class="recent-posts__author recent-posts__caption" href="#">by Ann Summers</a></p>
                         </li>
                      </ul>
                   </div>
                   <div class="aside__tags">
-                     <h6 class="aside__tags-title">Tags</h6>
+                     <h6 class="aside__tags-title aside__titles">Tags</h6>
                      <button class="aside__tags-btn">Dining room futniture</button>
                      <button class="aside__tags-btn">Chair</button>
                      <button class="aside__tags-btn">Table</button>

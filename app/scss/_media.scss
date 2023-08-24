@@ -31,6 +31,56 @@
 
 
 }
+@media (max-width: 1140px) {
+   .blog-page{
+      margin-top: 55px;
+      &__inner{
+         display: flex;
+         justify-content: space-between;
+         flex-wrap: wrap;
+      }
+      &__items{
+         margin: 0 auto;
+      }
+   }
+   .aside{
+      width: 729px;
+      margin: 0 auto;
+      position: relative;
+      margin-top: 50px;
+      order: -1;
+      flex-direction: row;
+      height: 400px;  
+      gap: 10px;
+      &__form{
+         position: absolute;
+         margin-top: -60px;
+      }   
+      &__categories{
+         flex: 1 0 auto;
+      }
+      &__recent{
+         flex: 1 1 auto;
+      }
+      &__tags{
+         flex: 0 1 auto;
+      }
+      &__social-item{
+         margin-right: 0;
+      }
+ 
+      &__social{
+         flex: 0 0 auto;
+         width: 30px;
+         height: 200px;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         flex-direction: column;
+      }
+   }
+}
+
 @media (max-width: 1024px) {  
    .main{
       &_home{
@@ -545,6 +595,137 @@
          display: none;
       }
    }   
+   .blog-page{
+      margin-top: 35px;
+      &__inner{
+         display: flex;
+         justify-content: space-between;
+         flex-wrap: wrap;
+      }
+      &__items{
+         margin: 0 auto;
+      }
+   }
+   .blog{
+      max-width: 610px;
+      &__caption{
+         font-size: 12px;
+         a {
+            font-size: 12px;
+            line-height: 24px;
+         }
+      } 
+      &__title{
+         font-size: 18px;
+         line-height: 28px;
+      }
+      &__text{
+         font-size: 13px;
+         line-height: 23px;
+      }
+      &__popup{
+         height: 347px;
+      }
+      &__play-img{
+         height: 40px;
+         width: 40px;
+      }
+
+      &-1{
+         height: 580px;
+      }
+      &-2{
+         margin-top: 40px;
+         height: 415px;
+      }
+      &-3{
+         height: 537px;
+         margin-top: 67px;
+      }
+   }
+   .quote{
+      margin-top: 90px;
+      height: 223px;
+      &__text{
+      font-size: 22px;
+      line-height: 33px;
+      width: 480px;
+      }
+      &__hr{
+         width: 180px;
+         margin-top: 18px;
+         margin-bottom: 18px;
+      }
+      &__athor{
+         font-size: 13px;
+         line-height: 18px;
+      }
+   }   
+   .aside{
+      margin-top: 50px;
+      flex-direction: row;
+      height: 350px;  
+      gap: 10px;
+      &__form{
+         position: absolute;
+         margin-top: -60px;
+      }   
+      &__categories{
+         flex: 1 0 auto;
+      }
+      &__recent{
+         flex: 0 1 auto;
+      }
+      &__tags{
+         flex: 0 1 auto;
+
+      } 
+      &__titles{
+         font-size: 13px;
+         line-height: 18px;
+
+      }
+      &__categories-link{
+         font-size: 13px;
+         line-height: 23px;
+      }
+      &__categories-item{
+         margin-top: 8px;
+      }
+      &__tags-btn{
+         border-radius: 12px;
+         opacity: .5;
+         height: 24px;
+         font-size: 12px;
+         margin-top: 8px;
+         color: #363838;
+         font-weight: 600;
+         padding: 0px 13px 0px 13px;
+         line-height: 24px;
+         margin-right: 3px;
+      }
+      &__social{
+         display: none;
+      }
+   }
+   .pagination{
+      margin-top: 40px;
+   }   
+   .recent-posts{
+      &__item{
+         margin-top: 8px;
+      }
+      &__title{
+         font-size: 13px;
+         line-height: 23px;
+      }
+      &__caption{
+         color: #A1A1A1;
+         font-size: 12px;
+         line-height: 24px;
+      }
+   
+   }      
    .footer{
       &__inner{
          flex-direction: column;
@@ -621,6 +802,94 @@
    .collection{
       grid-column-gap: 15px;
    }
+   .blog-page{
+      margin-top: 35px;
+      &__items{
+         margin-top: 20px;
+      }
+   }
+   .blog{
+      &__popup{
+         height: 295px;
+      }
+      &-1{
+         height: 520px;
+      }
+      &-2{
+         margin-top: 30px;
+         height: 355px;
+      }
+      &-3{
+         height: 487px;
+         margin-top: 57px;
+      }
+   }
+   .quote{
+      margin-top: 70px;
+      height: 203px;
+      &__text{
+      width: 440px;
+      }
+      &__hr{
+         width: 160px;
+         margin-top: 15px;
+         margin-bottom: 15px;
+      }
+   }   
+   .aside{
+      height: auto;
+      flex-direction: column;
+      &__form{
+         width: 100%;
+      }
+      &__show-button-box{
+         display: block;
+      }
+      &__show-button{
+         margin-bottom: 10px;
+         margin-left: 5px;
+         height: 40px;
+         background-color: #363838;
+         color: #fff;
+         border-radius: 20px;
+         border: none;
+         padding: 3px 10px;
+         font-size: 13px;
+         line-height: 23px;
+         height: 30px;
+         cursor: pointer;
+      }
+      &__show-button_tags--active{
+         background-color: #FFEF35;
+      }
+      &__show-button_recent--active{
+         background-color: #FFEF35;
+      }
+      &__show-button_categories--active{
+         background-color: #FFEF35;
+      }
+      &__categories{
+         display: none;
+         &--active{
+            display: block;
+         }
+      }
+      &__recent{
+         display: none;
+         &--active{
+            display: block;
+         }
+      }
+      &__tags{
+         display: none;
+         &--active{
+            display: block;
+         }
+      }
+
+   }
+
+
 }
 @media (max-width: 500px) {  
    .main{
@@ -1003,6 +1272,63 @@
       &__collection.collection{
          grid-column-gap: 5px;   
       }
+   }   
+   .blog{
+      max-width: 610px;
+      &__caption{
+         font-size: 10px;
+         a {
+            font-size: 10px;
+            line-height: 18px;
+         }
+      } 
+      &__title{
+         font-size: 16px;
+         line-height: 24px;
+      }
+      &__text{
+         font-size: 10px;
+         line-height: 16px;
+      }
+      &__popup{
+         height: 190px;
+      }
+      &__play-img{
+         height: 40px;
+         width: 40px;
+      }
+      &-1{
+         height: 400px;
+      }
+      &-2{
+         margin-top: 20px;
+         height: 260px;
+      }
+      &-3{
+         height: 380px;
+         margin-top: 37px;
+      }
+   }
+   .quote{
+      margin-top: 60px;
+      height: 180px;
+      &__text{
+      font-size: 16px;
+      line-height: 21px;
+      width: 320px;
+      }
+      &__hr{
+         width: 150px;
+         margin-top: 13px;
+         margin-bottom: 13px;
+      }
+      &__athor{
+         font-size: 10px;
+         line-height: 14px;
+      }
+   }   
+   .pagination{
+      margin-top: 30px;
    }   
    .footer{
       &__form-btn{
