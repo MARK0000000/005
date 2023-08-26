@@ -19,7 +19,7 @@ function menuOpen(event){
 
 const categories = document.querySelector(".aside__categories");
 const recent = document.querySelector(".aside__recent");
-const tags = document.querySelector(".aside__tags");
+const tags = document.querySelector(".aside__tags_aside");
 const categoriesButton = document.querySelector(".aside__show-button_categories");
 const recentButton = document.querySelector(".aside__show-button_recent");
 const tagsButton = document.querySelector(".aside__show-button_tags");
@@ -37,10 +37,9 @@ function show(event){
       recentButton.classList.toggle("aside__show-button_recent--active")
    }
    if (event.target.closest(".aside__show-button_tags")) {
-      tags.classList.toggle("aside__tags--active")
+      tags.classList.toggle("aside__tags_aside--active")
       tagsButton.classList.toggle("aside__show-button_tags--active")
-   }
-
+   }   
 }
 
 

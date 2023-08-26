@@ -2442,8 +2442,11 @@ body {
     height: 487px;
     margin-top: 57px;
   }
+  .blog__tegs {
+    display: block;
+  }
   .quote {
-    margin-top: 70px;
+    margin-top: 40px;
     height: 203px;
   }
   .quote__text {
@@ -2502,10 +2505,10 @@ body {
   .aside__recent--active {
     display: block;
   }
-  .aside__tags {
+  .aside__tags_aside {
     display: none;
   }
-  .aside__tags--active {
+  .aside__tags_aside--active {
     display: block;
   }
 }
@@ -2958,7 +2961,7 @@ body {
     padding-left: 10px;
   }
   .quote {
-    margin-top: 60px;
+    margin-top: 30px;
     height: 180px;
   }
   .quote__text {

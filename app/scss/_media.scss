@@ -869,9 +869,12 @@
          height: 487px;
          margin-top: 57px;
       }
+      &__tegs{
+         display: block;
+      }
    }
    .quote{
-      margin-top: 70px;
+      margin-top: 40px;
       height: 203px;
       &__text{
       width: 440px;
@@ -926,7 +929,7 @@
             display: block;
          }
       }
-      &__tags{
+      &__tags_aside{
          display: none;
          &--active{
             display: block;
@@ -1381,7 +1384,7 @@
 
    }
    .quote{
-      margin-top: 60px;
+      margin-top: 30px;
       height: 180px;
       &__text{
       font-size: 16px;
