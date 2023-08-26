@@ -841,6 +841,9 @@
       display: flex;
       justify-content: space-between;
    }
+   &__items{
+      max-width: 729px;
+   }
 }
 .aside{
    width: 350px;
@@ -985,26 +988,29 @@
       margin-top: 0;
       background-color: #FFF;
       height: 215px;
+      padding-left: 42px;
+      align-items: flex-start;
    }
    &__quote-text{
       text-align: left;
       width: 644px;
    }
    &__quote-hr{
-      margin-left: 42px;
+      margin-left: 0px;
    }
    &__quote-athor{
       text-align: left;
-      width: 644px;
+      max-width: 644px;
    }
    &__tegs{
       margin-top: 40px;
+      max-width: 729px;
    }
    &__tegs-btn{
       margin-right: 23px;
    }
    &__nav{
-      width: 730px;
+      max-width: 729px;
       margin-top: 40px;
       height: 128px;
       border-top: 1px solid #DFDFDF;
@@ -1012,7 +1018,7 @@
       @include f (space-between, center);
    }
    &__nav-link{
-      width: 243px;
+      max-width: 243px;
       font-size: 14px;
       color: #707070;
       font-weight: 600;
@@ -1089,7 +1095,7 @@
 }
 .comments{
    margin-top: 35px;
-   width: 730px;
+   max-width: 729px;
    &__title{
       font-size: 20px;
       line-height: 31px;
@@ -1118,7 +1124,7 @@
       color: #A1A1A1;
    }
    &__item-text{
-      width: 650px;
+      max-width: 650px;
    }
 
 
@@ -1131,7 +1137,7 @@
    }
    margin-top: 40px;
    &__textarea{
-      width: 730px;
+      width: 100%;
    }
    &__name{
       width: 360px;
