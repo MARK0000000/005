@@ -160,8 +160,10 @@
       background-color: transparent;
       color: #8F8D8D;
       cursor: pointer;
+      transition: ease 1s;
    }
    .mixitup-control-active{
+      transition: ease 0.5s;
       background: #ffee3586;
       color: $title;
    }
@@ -373,7 +375,7 @@
       &:hover{
          .collection__info{
             opacity: 0.6;
-            transition: all 0.6s;
+            transition: all 1s;
          }
       }
    }
@@ -390,7 +392,14 @@
       flex-direction: column;
       background: #FFF;
       opacity: 0;
+      transition: all 1s;
+
    }
+   &__info--active{
+      opacity: 0.6;
+      transition: all 1s;
+   }
+
    &__info-title{
       width: 100%;
       text-align: center;
@@ -422,6 +431,12 @@
    background-repeat: no-repeat;
    background-size: cover;
    margin-top: 100px;
+   &__blur{
+      height: 100%;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.8)
+      
+     }
    &__container{
       @include f (start, center);
       padding-top: 172px;

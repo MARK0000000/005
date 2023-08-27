@@ -5,12 +5,13 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Desire</title>
-   <link rel="stylesheet" href="css/style.min.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:ital,wght@0,400;1,300;1,400&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+   <link rel="stylesheet" href="css/style.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 
 <body>
@@ -157,7 +158,7 @@
                      <button class="aside__show-button aside__show-button_recent">Recent posts</button>
                      <button class="aside__show-button aside__show-button_tags">Tags</button>
                   </div>
-                  <div class="aside__categories">
+                  <div class="aside__categories animate__animated animate__slideInLeft">
                      <h6 class="aside__categories-title aside__titles">Categories</h6>
                      <ul class="aside__categories-list">
                         <li class="aside__categories-item">
@@ -177,7 +178,7 @@
                         </li>
                      </ul>
                   </div>
-                  <div class="aside__recent">
+                  <div class="aside__recent animate__animated animate__slideInLeft">
                      <h6 class="aside__recent-title aside__titles">Recent Posts</h6>
                      <ul class="recent-posts">
                         <li class="recent-posts__item">
@@ -194,7 +195,7 @@
                         </li>
                      </ul>
                   </div>
-                  <div class="aside__tags aside__tags_aside">
+                  <div class="aside__tags aside__tags_aside animate__animated animate__slideInLeft">
                      <h6 class="aside__tags-title aside__titles">Tags</h6>
                      <button class="aside__tags-btn">Dining room futniture</button>
                      <button class="aside__tags-btn">Chair</button>
@@ -287,25 +288,19 @@
 
 </div>
 
-<style>
-   .swiper-button-prev::after{
-      content: url(./images/icons/back-arrow.svg);
-   }
-   .swiper-button-next::after{
-      content: url(./images/icons/next-arrow.svg);
-   }
-   .swiper-slide{
-      user-select: none;
-
-   }
-</style>
 
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 
 <script src="js/main.min.js"></script>
 <script src="./js/fancybox.js"></script>
 <script src="./js/sliders.js"></script>
+
+<script>
+   new WOW().init();
+</script>
 
 </body>
 

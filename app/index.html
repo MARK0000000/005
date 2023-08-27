@@ -9,6 +9,7 @@
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
    <link rel="stylesheet" href="css/style.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
 
@@ -70,13 +71,13 @@
 
    <main class="main main_home">
 
-      <section class="top swiper">
+      <section class="top swiper swiperTop">
          <div class="top__container swiper-wrapper">
             <div class="swiper-slide">
                <div class="top__slide">
                   <div><img class="top__slide-img" src="./images/total/top.png" alt="#"></div>
                   <div class="top__slide-content">
-                     <h2 class="top__slide-title">Furniture collection</h2>
+                     <h1 class="top__slide-title">Furniture collection</h1>
                      <hr class="top__slide-hr">
                      <p class="top__slide-text">Deep v you probably haven't heard of them banh mi synth actually affogato. Aesthetic lyft ethical drinking vinegar austint</p>
                   </div>   
@@ -86,7 +87,7 @@
                <div class="top__slide">
                   <div><img class="top__slide-img" src="./images/total/top.png" alt="#"></div>
                   <div class="top__slide-content">
-                     <h2 class="top__slide-title">Furniture collection</h2>
+                     <h1 class="top__slide-title">Furniture collection</h1>
                      <hr class="top__slide-hr">
                      <p class="top__slide-text">Deep v you probably haven't heard of them banh mi synth actually affogato. Aesthetic lyft ethical drinking vinegar austint</p>
                   </div>   
@@ -96,7 +97,7 @@
                <div class="top__slide">
                   <div><img class="top__slide-img" src="./images/total/top.png" alt="#"></div>
                   <div class="top__slide-content">
-                     <h2 class="top__slide-title">Furniture collection</h2>
+                     <h1 class="top__slide-title">Furniture collection</h1>
                      <hr class="top__slide-hr">
                      <p class="top__slide-text">Deep v you probably haven't heard of them banh mi synth actually affogato. Aesthetic lyft ethical drinking vinegar austint</p>
                   </div>   
@@ -115,7 +116,7 @@
             <div class="collection">
                <div class="collection__item">
                   <img class="collection__img" src="./images/collection/col_1.png" alt="#">
-                  <div class="collection__info">
+                  <div class="collection__info" data-wow-delay="0s">
                      <h6 class="collection__info-title">Truffaut literally trust</h6>
                      <hr class="collection__info-hr">
                      <p class="collection__info-text">Living room furntiture | Chair</p>
@@ -158,12 +159,14 @@
       </section>
 
       <section class="drinking">
-         <div class="container drinking__container">
-            <div class="drinking__info">
-               <h2 class="drinking__title">Aesthetic <br> ethical drinking</h2>
-               <hr class="drinking__hr">
-               <p class="drinking__text">Deep v you probably haven't heard of them banh mi synth actually affogato. Artlyft ethical the one drinking vinegar austint
-               </p>
+         <div class="drinking__blur wow animate__animated animate__fadeInRight" data-wow-delay="0.5s">
+            <div class="container drinking__container">
+               <div class="drinking__info">
+                  <h2 class="drinking__title wow animate__animated animate__fadeInLeft" data-wow-delay="1s">Aesthetic <br> ethical drinking</h2>
+                  <hr class="drinking__hr wow animate__animated animate__fadeInLeft" data-wow-delay="1s">
+                  <p class="drinking__text wow animate__animated animate__fadeInLeft" data-wow-delay="1s">Deep v you probably haven't heard of them banh mi synth actually affogato. Artlyft ethical the one drinking vinegar austint
+                  </p>
+               </div>
             </div>
          </div>
       </section>
@@ -173,17 +176,17 @@
             <h3 class="howItWorks__title">How it works</h3>
             <div class="howItWorks__content">
                <div class="howItWorks__items-box">
-                  <div class="howItWorks__item howItWorks__item_1">
+                  <div class="howItWorks__item howItWorks__item_1 wow animate__animated animate__fadeInLeft" data-wow-delay="0.5s">
                      <h6 class="howItWorks__item-title howItWorks__item-title_designerConsultation">Designer Consultation</h6>
                      <p class="howItWorks__item-text howItWorks__item-text_1">Kinfolk scenester authentic craft beer truffaut irony intelligentsia YOLO lomo bushwick coloring book. Semiotics man bun venmo viral cliche</p>
                   </div>
-                  <div class="howItWorks__item howItWorks__item_2">
+                  <div class="howItWorks__item howItWorks__item_2 wow animate__animated animate__fadeInLeft" data-wow-delay="1.5s">
                      <h6 class="howItWorks__item-title howItWorks__item-title_production">Production</h6>
                      <p class="howItWorks__item-text howItWorks__item-text_2">Everyday carry actually neutra authentic kogi shabby chic</p>
                   </div>
                </div>
                <div class="howItWorks__schedul"></div>
-               <div class="howItWorks__item howItWorks__item_3">
+               <div class="howItWorks__item howItWorks__item_3 wow animate__animated animate__fadeInLeft" data-wow-delay="1s">
                   <h6 class="howItWorks__item-title howItWorks__item-title_measurements">Measurements</h6>
                   <p class="howItWorks__item-text howItWorks__item-text_3">Intelligentsia YOLO lomo bushwick coloring book. Semiotics man bun venmo viral cliche</p>
                </div>
@@ -371,23 +374,18 @@
 
 </div>
 
-<style>
-   .swiper-pagination-bullet {
-      background-color: #363838;
-      opacity: 1;
-   }
-   .swiper-pagination-bullet-active {
-   background-color: #FFEF35;
-   }
-</style>
-
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="./js/main.min.js"></script>
-<script src="./js/main.js"></script>
 <script src="./js/mixitup.js"></script>
 <script src="./js/sliders.js"></script>
+<script src="./js/collection-animation.js"></script>
+
+<script>
+   new WOW().init();
+</script>
+
 
 
 </body>

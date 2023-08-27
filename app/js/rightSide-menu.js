@@ -15,9 +15,7 @@ rightSideMenu.style.height = `${heightOfPage}px`;
 
 
 
-document.addEventListener("click", onRightSide)
-
-function onRightSide(event){
+document.addEventListener("click", (event) => {
    if (event.target.closest(".header__btn-img")) {
       rightSideMenu.classList.add("rightSide-menu--active")
 
@@ -25,5 +23,7 @@ function onRightSide(event){
    if (event.target.closest(".rightSide-menu__close")) {
       rightSideMenu.classList.remove("rightSide-menu--active")
    }
-}
+
+})
+
 

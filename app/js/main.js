@@ -1,9 +1,7 @@
 const openMenu = document.querySelector(".header__btn-menu");
 const menu = document.querySelectorAll(".menu");
-console.log(menu);
-document.addEventListener("click", menuOpen);
 
-function menuOpen(event){
+document.addEventListener("click", (event) => {
    if (event.target.closest(".header__btn-menu")) {
       menu[0].classList.toggle("menu--open")
       menu[1].classList.toggle("menu--open")
@@ -12,8 +10,8 @@ function menuOpen(event){
       menu[0].classList.remove("menu--open")
       menu[1].classList.remove("menu--open")
    }
+});
 
-}
 
 
 
@@ -25,9 +23,7 @@ const recentButton = document.querySelector(".aside__show-button_recent");
 const tagsButton = document.querySelector(".aside__show-button_tags");
 
 
-document.addEventListener("click", show)
-
-function show(event){
+document.addEventListener("click", (event) => {
    if (event.target.closest(".aside__show-button_categories")) {
       categories.classList.toggle("aside__categories--active")
       categoriesButton.classList.toggle("aside__show-button_categories--active")
@@ -40,6 +36,8 @@ function show(event){
       tags.classList.toggle("aside__tags_aside--active")
       tagsButton.classList.toggle("aside__show-button_tags--active")
    }   
-}
+
+})
+
 
 

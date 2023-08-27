@@ -78,6 +78,26 @@ a {
   text-decoration: none;
 }
 
+.swiper-pagination-bullet {
+  background-color: #363838;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background-color: #FFEF35;
+}
+.swiper-button-prev::after {
+  content: url(../images/icons/back-arrow.svg);
+}
+.swiper-button-next::after {
+  content: url(../images/icons/next-arrow.svg);
+}
+.swiper-slide {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 html {
   overflow-x: hidden;
   height: 100%;
@@ -321,8 +341,12 @@ body {
   background-color: transparent;
   color: #8F8D8D;
   cursor: pointer;
+  -webkit-transition: ease 1s;
+  transition: ease 1s;
 }
 .gallery .mixitup-control-active {
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
   background: rgba(255, 238, 53, 0.5254901961);
   color: #363838;
 }
@@ -585,8 +609,8 @@ body {
 }
 .collection__item:hover .collection__info {
   opacity: 0.6;
-  -webkit-transition: all 0.6s;
-  transition: all 0.6s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 .collection__img {
   -o-object-fit: cover;
@@ -613,6 +637,13 @@ body {
           flex-direction: column;
   background: #FFF;
   opacity: 0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+.collection__info--active {
+  opacity: 0.6;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 .collection__info-title {
   width: 100%;
@@ -641,6 +672,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 100px;
+}
+.drinking__blur {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 .drinking__container {
   display: -webkit-box;
@@ -2483,14 +2519,22 @@ body {
     line-height: 23px;
     height: 30px;
     cursor: pointer;
+    -webkit-transition: ease 1s;
+    transition: ease 1s;
   }
   .aside__show-button_tags--active {
+    -webkit-transition: ease 0.5s;
+    transition: ease 0.5s;
     background-color: #FFEF35;
   }
   .aside__show-button_recent--active {
+    -webkit-transition: ease 0.5s;
+    transition: ease 0.5s;
     background-color: #FFEF35;
   }
   .aside__show-button_categories--active {
+    -webkit-transition: ease 0.5s;
+    transition: ease 0.5s;
     background-color: #FFEF35;
   }
   .aside__categories {

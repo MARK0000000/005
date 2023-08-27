@@ -2,7 +2,6 @@
 @media (max-width: 1920px) { 
 }
 @media (max-width: 1536px) { 
-
 }
 @media (max-width: 1366px) { 
    .header{
@@ -28,8 +27,6 @@
          font-size: 12px;
       }
    }
-
-
 }
 @media (max-width: 1140px) {
    .blog-page{
@@ -907,14 +904,21 @@
          line-height: 23px;
          height: 30px;
          cursor: pointer;
+         transition: ease 1s;
+
       }
       &__show-button_tags--active{
+         transition: ease 0.5s;
          background-color: #FFEF35;
       }
       &__show-button_recent--active{
+         transition: ease 0.5s;
+
          background-color: #FFEF35;
       }
       &__show-button_categories--active{
+         transition: ease 0.5s;
+
          background-color: #FFEF35;
       }
       &__categories{
