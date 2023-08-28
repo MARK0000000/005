@@ -784,6 +784,9 @@
 
    &__info-email{
       width: 100%;
+      p{
+         display: inline-block;
+      }
    }
    &__form{
       margin-top: 24px;

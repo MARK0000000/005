@@ -26,7 +26,6 @@ const swiper2 = new Swiper('.swiperContact', {
 });
 const swiper3 = new Swiper('.swiperBlog', {
    grabCursor: true,
-   spaceBetween: 30,
    navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',

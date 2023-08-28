@@ -41,7 +41,11 @@ function images() {
 function scripts() {
   return src([
      'app/js/rightSide-menu.js',
+     'app/js/fancybox.js',
      'app/js/main.js',
+     'app/js/collection-animation.js',
+     'app/js/sliders.js',
+     'app/js/mixitup.js',
   ])
     .pipe(concat('main.min.js'))
     .pipe(uglify())
@@ -52,7 +56,7 @@ function scripts() {
 
 function styles() {
   return src('app/scss/style.scss')
-      .pipe(scss({outputStyle: 'expanded'}))
+      .pipe(scss({outputStyle: 'compressed'}))
       .pipe(concat('style.min.css'))
       .pipe(autoprefixer({
         overrideBrowserslist: ['last 10 version'],

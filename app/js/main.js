@@ -41,3 +41,4 @@ document.addEventListener("click", (event) => {
 
 
 
+new WOW().init();
