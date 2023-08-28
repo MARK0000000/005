@@ -12,7 +12,6 @@ const swiper = new Swiper('.swiper', {
 
 
 const swiper2 = new Swiper('.swiperContact', {
-   spaceBetween: 30,
    centeredSlides: true,
    autoplay: {
      delay: 3000,
