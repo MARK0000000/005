@@ -41,11 +41,7 @@ function images() {
 function scripts() {
   return src([
      'app/js/rightSide-menu.js',
-     'app/js/fancybox.js',
      'app/js/main.js',
-     'app/js/collection-animation.js',
-     'app/js/sliders.js',
-     'app/js/mixitup.js',
   ])
     .pipe(concat('main.min.js'))
     .pipe(uglify())
