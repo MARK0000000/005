@@ -1,3 +1,20 @@
+// right-side-menu
+const openButton = document.querySelector(".header__btn");
+const closeButton = document.querySelector(".rightSide-menu__close");
+const rightSideMenu = document.querySelector(".rightSide-menu")
+
+document.addEventListener("click", (event) => {
+   if (event.target.closest(".header__btn-img")) {
+      rightSideMenu.classList.add("rightSide-menu--active")
+
+   }
+   if (event.target.closest(".rightSide-menu__close")) {
+      rightSideMenu.classList.remove("rightSide-menu--active")
+   }
+
+})
+
+// menu mobile
 const openMenu = document.querySelector(".header__btn-menu");
 const menu = document.querySelectorAll(".menu");
 
@@ -15,30 +32,6 @@ document.addEventListener("click", (event) => {
 
 
 
-const categories = document.querySelector(".aside__categories");
-const recent = document.querySelector(".aside__recent");
-const tags = document.querySelector(".aside__tags_aside");
-const categoriesButton = document.querySelector(".aside__show-button_categories");
-const recentButton = document.querySelector(".aside__show-button_recent");
-const tagsButton = document.querySelector(".aside__show-button_tags");
-
-
-document.addEventListener("click", (event) => {
-   if (event.target.closest(".aside__show-button_categories")) {
-      categories.classList.toggle("aside__categories--active")
-      categoriesButton.classList.toggle("aside__show-button_categories--active")
-   }
-   if (event.target.closest(".aside__show-button_recent")) {
-      recent.classList.toggle("aside__recent--active")
-      recentButton.classList.toggle("aside__show-button_recent--active")
-   }
-   if (event.target.closest(".aside__show-button_tags")) {
-      tags.classList.toggle("aside__tags_aside--active")
-      tagsButton.classList.toggle("aside__show-button_tags--active")
-   }   
-
-})
 
 
 
-new WOW().init();

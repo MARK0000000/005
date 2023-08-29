@@ -3,14 +3,10 @@ const swiper = new Swiper('.swiper', {
      el: '.swiper-pagination',
      clickable: true,
    },
- 
  });
-
- const swiper1 = new Swiper('.swiperTop', {
+const swiper1 = new Swiper('.swiperTop', {
    grabCursor: true,
 });
-
-
 const swiper2 = new Swiper('.swiperContact', {
    centeredSlides: true,
    autoplay: {

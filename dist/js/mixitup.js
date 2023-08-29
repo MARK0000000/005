@@ -4,6 +4,5 @@ var mixer = mixitup('.gallery__inner', {
    },
    animation: {
       easing: 'ease-in-out',
-      //effects: 'fade translateZ(-100px)'
      }
 });

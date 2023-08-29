@@ -828,6 +828,7 @@
    }
    &__btn{
       margin-top: 20px;
+      margin-left: 0;
    }
 }
 
@@ -835,6 +836,11 @@
    padding: 0;
    .swiper-wrapper{
       padding: 0;
+   }
+   .collection__item:hover{
+      .contact-collection__info{
+         opacity: 0;
+      }
    }
    margin-top: 100px;
    height: 100%;
