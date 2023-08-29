@@ -8,10 +8,9 @@ collection()
 setInterval( collection ,5500);
 
 function collection(){
-
    let a = Math.random()
 
-   if(deviceWidth <= 1024) {
+   if(deviceWidth <= 1024 && deviceWidth > 768) {
       switch(true){
          case ( a >= 0 && a <= 0.25 ):
             collectionItems[0].classList.add("collection__info--active");
