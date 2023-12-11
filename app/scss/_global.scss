@@ -1,3 +1,16 @@
+
+::-webkit-scrollbar{
+   background-color: transparent;
+   width: 10px;
+   border-left: 1px solid #5A5A5A;
+}
+::-webkit-scrollbar-thumb{
+   background-color: rgb(255,238,53);
+   height: 5px;
+   border: 1px solid #5A5A5A;
+}
+
+
 html{
    overflow-x: hidden;
    height: 100%;

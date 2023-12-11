@@ -1,4 +1,6 @@
 
+
+
 @media (max-width: 1920px) { 
 }
 @media (max-width: 1536px) { 
@@ -290,6 +292,17 @@
    }
 }
 @media (max-width: 768px) { 
+
+   ::-webkit-scrollbar{
+      background-color: transparent;
+      width: 5px;
+
+      border-left: none;
+   }
+   ::-webkit-scrollbar-thumb{
+      background-color: rgb(255,238,53);
+      border: none;
+   }
    .main{
       &_home{
          margin-bottom: 70px;
